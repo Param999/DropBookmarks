@@ -25,4 +25,15 @@ public class HelloResourceTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void testHelloSecuredGreetings(){
+        String expected = "Hello Secured Dropwizard";
+        String actual = RULE
+                .getJerseyTest()
+                .target("hello/secure")
+                .request(MediaType.TEXT_PLAIN)
+                .get(String.class);
+        assertEquals(expected, actual);
+    }
+
 }

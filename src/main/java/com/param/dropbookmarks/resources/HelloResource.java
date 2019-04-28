@@ -18,7 +18,7 @@ public class HelloResource {
     }
 
     @GET
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     @Path("/secure")
     public String helloSecuredGreetings(@Auth User user){
         return "Hello Secured Dropwizard";
