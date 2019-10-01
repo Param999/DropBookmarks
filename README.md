@@ -1,2 +1,2 @@
 # DropBookmarks
-Dropwizard app
+Simple Dropwizard app
